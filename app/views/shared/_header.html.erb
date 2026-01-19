@@ -1,0 +1,38 @@
+<header class="bg-sky-500 px-6 py-3">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <%= link_to root_path, class: "text-2xl font-black tracking-tight" do %>
+        <span class="text-orange-500">G</span><span class="text-white">REENPAL</span>
+      <% end %>
+      <nav class="hidden md:flex items-center gap-6">
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-white text-sm font-medium hover:text-sky-100">
+            Locations
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-white text-sm font-medium hover:text-sky-100">
+            Explore Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <%= link_to "Join as Pro", join_as_pro_path, 
+          class: "px-4 py-2 border-2 border-white text-white rounded-full text-sm font-semibold hover:bg-white hover:text-sky-500 transition" %>
+      <%= link_to "Get Free Lawn Mowing Quotes", get_quotes_path,
+          class: "px-4 py-2 bg-sky-700 text-white rounded-full text-sm font-semibold hover:bg-sky-800 transition hidden lg:block" %>
+      <% if user_signed_in? %>
+        <%= link_to "Account", edit_user_registration_path, class: "px-5 py-2 bg-orange-500 text-white rounded-full text-sm font-semibold hover:bg-orange-600 transition" %>
+      <% else %>
+        <%= link_to "Log In", new_user_session_path, class: "px-5 py-2 bg-orange-500 text-white rounded-full text-sm font-semibold hover:bg-orange-600 transition" %>
+      <% end %>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.pagy-nav {
+  @apply flex justify-center gap-1;
+}
+
+.pagy-nav .page a,
+.pagy-nav .page.active,
+.pagy-nav .page.prev,
+.pagy-nav .page.next {
+  @apply px-3 py-2 rounded-lg text-sm;
+}
+
+.pagy-nav .page a {
+  @apply bg-white border hover:bg-gray-50;
+}
+
+.pagy-nav .page.active {
+  @apply bg-sky-500 text-white;
+}
+
+.pagy-nav .page.prev a,
+.pagy-nav .page.next a {
+  @apply bg-white border;
+}
+
+.pagy-nav .page.prev.disabled,
+.pagy-nav .page.next.disabled {
+  @apply text-gray-300 cursor-not-allowed;
+}

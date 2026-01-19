@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: greenpal_development
+
+test:
+  <<: *default
+  database: greenpal_test
+
+production:
+  <<: *default
+  database: greenpal_production
+  username: greenpal
+  password: <%= ENV["GREENPAL_DATABASE_PASSWORD"] %>
