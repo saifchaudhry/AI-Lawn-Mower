@@ -3,16 +3,16 @@ current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0
 creating Makefile
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-e5uajt sitelibdir\=./.gem.20260120-86312-e5uajt clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-knlx4x sitelibdir\=./.gem.20260120-8478-knlx4x clean
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-e5uajt sitelibdir\=./.gem.20260120-86312-e5uajt
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-knlx4x sitelibdir\=./.gem.20260120-8478-knlx4x
 compiling escape.c
 linking shared-object cgi/escape.bundle
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-e5uajt sitelibdir\=./.gem.20260120-86312-e5uajt install
-/opt/homebrew/bin/ginstall -c -m 0755 escape.bundle ./.gem.20260120-86312-e5uajt/cgi
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-knlx4x sitelibdir\=./.gem.20260120-8478-knlx4x install
+/opt/homebrew/bin/ginstall -c -m 0755 escape.bundle ./.gem.20260120-8478-knlx4x/cgi
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-e5uajt sitelibdir\=./.gem.20260120-86312-e5uajt clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-knlx4x sitelibdir\=./.gem.20260120-8478-knlx4x clean

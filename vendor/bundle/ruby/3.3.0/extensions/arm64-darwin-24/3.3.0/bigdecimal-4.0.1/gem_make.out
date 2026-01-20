@@ -20,17 +20,17 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-bwmzg3 sitelibdir\=./.gem.20260120-86312-bwmzg3 clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-ppshx6 sitelibdir\=./.gem.20260120-8478-ppshx6 clean
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-bwmzg3 sitelibdir\=./.gem.20260120-86312-bwmzg3
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-ppshx6 sitelibdir\=./.gem.20260120-8478-ppshx6
 compiling bigdecimal.c
 compiling missing.c
 linking shared-object bigdecimal.bundle
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-bwmzg3 sitelibdir\=./.gem.20260120-86312-bwmzg3 install
-/opt/homebrew/bin/ginstall -c -m 0755 bigdecimal.bundle ./.gem.20260120-86312-bwmzg3
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-ppshx6 sitelibdir\=./.gem.20260120-8478-ppshx6 install
+/opt/homebrew/bin/ginstall -c -m 0755 bigdecimal.bundle ./.gem.20260120-8478-ppshx6
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-bwmzg3 sitelibdir\=./.gem.20260120-86312-bwmzg3 clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-ppshx6 sitelibdir\=./.gem.20260120-8478-ppshx6 clean

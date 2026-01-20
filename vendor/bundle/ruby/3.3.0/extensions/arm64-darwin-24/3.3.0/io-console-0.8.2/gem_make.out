@@ -16,16 +16,16 @@ checking for ttyname_r()... yes
 creating Makefile
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-6gfne sitelibdir\=./.gem.20260120-86312-6gfne clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-6rqq70 sitelibdir\=./.gem.20260120-8478-6rqq70 clean
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-6gfne sitelibdir\=./.gem.20260120-86312-6gfne
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-6rqq70 sitelibdir\=./.gem.20260120-8478-6rqq70
 compiling console.c
 linking shared-object io/console.bundle
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-6gfne sitelibdir\=./.gem.20260120-86312-6gfne install
-/opt/homebrew/bin/ginstall -c -m 0755 console.bundle ./.gem.20260120-86312-6gfne/io
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-6rqq70 sitelibdir\=./.gem.20260120-8478-6rqq70 install
+/opt/homebrew/bin/ginstall -c -m 0755 console.bundle ./.gem.20260120-8478-6rqq70/io
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-6gfne sitelibdir\=./.gem.20260120-86312-6gfne clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-6rqq70 sitelibdir\=./.gem.20260120-8478-6rqq70 clean

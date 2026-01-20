@@ -24,18 +24,18 @@ checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
 creating Makefile
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-l88nef sitelibdir\=./.gem.20260120-86312-l88nef clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-84i23y sitelibdir\=./.gem.20260120-8478-84i23y clean
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-l88nef sitelibdir\=./.gem.20260120-86312-l88nef
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-84i23y sitelibdir\=./.gem.20260120-8478-84i23y
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-l88nef sitelibdir\=./.gem.20260120-86312-l88nef install
-/opt/homebrew/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20260120-86312-l88nef/puma
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-84i23y sitelibdir\=./.gem.20260120-8478-84i23y install
+/opt/homebrew/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20260120-8478-84i23y/puma
 
 current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260120-86312-l88nef sitelibdir\=./.gem.20260120-86312-l88nef clean
+make DESTDIR\= sitearchdir\=./.gem.20260120-8478-84i23y sitelibdir\=./.gem.20260120-8478-84i23y clean
