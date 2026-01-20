@@ -1,0 +1,19 @@
+current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+/Users/apple/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260120-86312-gdls6c sitelibdir\=./.gem.20260120-86312-gdls6c clean
+
+current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260120-86312-gdls6c sitelibdir\=./.gem.20260120-86312-gdls6c
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260120-86312-gdls6c sitelibdir\=./.gem.20260120-86312-gdls6c install
+/opt/homebrew/bin/ginstall -c -m 0755 escape.bundle ./.gem.20260120-86312-gdls6c/erb
+
+current directory: /Users/apple/workspace/greenpal-test/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260120-86312-gdls6c sitelibdir\=./.gem.20260120-86312-gdls6c clean
