@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-ruby "~> 3.3.0"
 gem "bundler", "~> 2.4"
 
 gem "rails", "~> 7.1.0"
