@@ -4,15 +4,12 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
-  database: greenpal_development
+  url: <%= ENV["DATABASE_URL"] %>
 
 test:
   <<: *default
   database: greenpal_test
 
 production:
-  <<: *default
-  database: greenpal_production
-  username: greenpal
-  password: <%= ENV["GREENPAL_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+  sslmode: require

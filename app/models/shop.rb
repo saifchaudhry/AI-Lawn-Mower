@@ -6,7 +6,7 @@ class Shop < ApplicationRecord
   has_many :brands, through: :shop_brands
   has_many :reviews, dependent: :destroy
   has_many :shop_images, -> { order(position: :asc) }, dependent: :destroy
-  has_one_attached :logo
+  # has_one_attached :logo
 
   include PgSearch::Model
   pg_search_scope :search_by_name, against: :name, using: { tsearch: { prefix: true } }

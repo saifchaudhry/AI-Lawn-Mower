@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Running Rails migrations..."
+bundle exec rails db:migrate db:seed
