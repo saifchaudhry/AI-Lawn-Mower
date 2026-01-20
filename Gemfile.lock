@@ -193,8 +193,7 @@ GEM
       prettyprint
     prettyprint (0.2.0)
     prism (1.8.0)
-    psych (5.3.1)
-      date
+    psych (5.1.2)
       stringio
     public_suffix (7.0.2)
     puma (7.1.0)
@@ -341,6 +340,7 @@ DEPENDENCIES
   pagy (~> 6.2)
   pg (~> 1.5)
   pg_search (~> 2.3)
+  psych (~> 5.1.2)
   puma (>= 5.0)
   rails (~> 7.1.0)
   ransack (~> 4.1)
@@ -352,7 +352,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.3.3p89
 
 BUNDLED WITH
    2.4.10
