@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-gem "bundler", "~> 2.4"
 
 gem "rails", "~> 7.1.0"
 gem "pg", "~> 1.5"
@@ -38,6 +37,7 @@ end
 
 group :development do
   gem "web-console"
+  gem "webrick"
 end
 
 group :test do
