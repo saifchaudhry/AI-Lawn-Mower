@@ -10,7 +10,6 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 gem "jbuilder"
 gem "bootsnap", require: false
-gem "psych", "~> 5.1.2", platforms: :ruby
 
 # Authentication
 gem "devise", "~> 4.9"
