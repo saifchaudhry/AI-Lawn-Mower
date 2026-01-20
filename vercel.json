@@ -1,9 +1,26 @@
 {
   "version": 2,
+  "buildCommand": "bash vercel-build.sh",
+  "installCommand": "echo 'Dependencies installed in buildCommand'",
+  "framework": null,
   "builds": [
-    { "src": "bin/rails", "use": "@vercel/ruby" }
+    {
+      "src": "bin/rails",
+      "use": "@vercel/ruby",
+      "config": {
+        "runtime": "ruby3.2"
+      }
+    }
   ],
   "routes": [
+    { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
     { "src": "/(.*)", "dest": "bin/rails" }
-  ]
+  ],
+  "env": {
+    "RACK_ENV": "production",
+    "RAILS_ENV": "production",
+    "SECRET_KEY_BASE": "@secret_key_base",
+    "RAILS_SERVE_STATIC_FILES": "true",
+    "RAILS_LOG_TO_STDOUT": "true"
+  }
 }
