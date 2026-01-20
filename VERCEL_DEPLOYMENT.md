@@ -75,6 +75,27 @@ rails secret
 
 ## Troubleshooting
 
+### Psych Gem Native Extension Error
+If you encounter errors about `psych` gem failing to build with "yaml.h not found":
+
+**Solution 1: Use psych constraint (Already configured)**
+The Gemfile now includes `gem "psych", "< 5.3"` which uses a version without native extension issues.
+
+**Solution 2: If still failing, add to your Gemfile:**
+```ruby
+# Force psych to use a specific compatible version
+gem "psych", "~> 5.1.2"
+```
+
+Then run locally:
+```bash
+bundle lock --add-platform x86_64-linux
+bundle lock --add-platform arm64-linux
+```
+
+**Root Cause:**
+Vercel's Ruby runtime may use Ruby 3.3.0 instead of 3.2.2, and psych 5.3+ requires libyaml-dev headers which aren't available in the serverless environment.
+
 ### Bundler Version Issues
 The project uses bundler 2.4.10 specifically. The build script ensures this version is installed.
 

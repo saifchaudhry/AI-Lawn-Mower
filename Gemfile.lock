@@ -351,6 +351,7 @@ DEPENDENCIES
   pagy (~> 6.2)
   pg (~> 1.5)
   pg_search (~> 2.3)
+  psych (< 5.3)
   puma (>= 5.0)
   rails (~> 7.1.0)
   ransack (~> 4.1)
@@ -361,6 +362,9 @@ DEPENDENCIES
   turbo-rails
   web-console
   webrick
+
+RUBY VERSION
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.10

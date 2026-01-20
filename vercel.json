@@ -6,7 +6,7 @@
   "builds": [
     {
       "src": "bin/rails",
-      "use": "@vercel/ruby",
+      "use": "@vercel/ruby@3.1.0",
       "config": {
         "runtime": "ruby3.2"
       }
