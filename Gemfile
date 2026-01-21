@@ -12,7 +12,7 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 gem "jbuilder"
 gem "bootsnap", require: false
-gem "psych", "< 5.3"  # Pin psych to avoid native extension issues on Vercel
+gem "psych", "< 5.3"
 
 # Authentication
 gem "devise", "~> 4.9"

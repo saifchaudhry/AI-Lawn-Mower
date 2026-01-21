@@ -12,5 +12,5 @@ test:
   database: greenpal_test
 
 production:
-  url: <%= ENV["DATABASE_URL"] %>
-  sslmode: require
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
