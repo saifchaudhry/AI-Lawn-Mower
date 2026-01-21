@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   # Get quotes - redirects to locations for now
   get '/get-quotes', to: 'locations#index', as: :get_quotes
 
+  # Join as pro - placeholder for now
+  get '/join-as-pro', to: 'pages#home', as: :join_as_pro
+
   # Locations and nested shops
   resources :locations, only: [:index], param: :slug
   get '/:slug', to: 'locations#show', as: :location
