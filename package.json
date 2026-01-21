@@ -10,8 +10,7 @@
     "tailwindcss": "^3.3.6"
   },
   "scripts": {
-    "build": "bash vercel-build.sh",
-    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
-    "vercel-build": "bash vercel-build.sh"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
   }
 }
