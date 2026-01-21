@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   # Health check
   get '/health', to: proc { [200, { 'Content-Type' => 'text/plain' }, ['OK']] }
 
+  # Get quotes - redirects to locations for now
+  get '/get-quotes', to: 'locations#index', as: :get_quotes
+
   # Locations and nested shops
   resources :locations, only: [:index], param: :slug
   get '/:slug', to: 'locations#show', as: :location
