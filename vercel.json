@@ -5,16 +5,13 @@
   "framework": null,
   "builds": [
     {
-      "src": "bin/rails",
-      "use": "@vercel/ruby@3.1.0",
-      "config": {
-        "runtime": "ruby3.2"
-      }
+      "src": "api/index.rb",
+      "use": "@vercel/ruby"
     }
   ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
-    { "src": "/(.*)", "dest": "bin/rails" }
+    { "src": "/(.*)", "dest": "/api/index.rb" }
   ],
   "env": {
     "RACK_ENV": "production",

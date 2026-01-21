@@ -99,9 +99,69 @@ Once deployed, check:
 3. Assets precompile successfully
 4. App starts without errors
 
+---
+
+## Runtime Error: NOT_FOUND (404)
+
+If you see this error **after successful build**:
+```
+404: NOT_FOUND
+Code: NOT_FOUND
+ID: dxb1::krt7x-...
+```
+
+**This means Rails is running but database tables don't exist yet.**
+
+### Fix: Run Database Migrations
+
+Your Supabase database needs tables created. Choose one option:
+
+#### Option 1: Auto-run during build (Easiest)
+1. Add to Vercel environment variables:
+   ```
+   RUN_MIGRATIONS=true
+   ```
+2. Redeploy
+
+#### Option 2: Manual migration (from your machine)
+```bash
+# Set environment
+export DATABASE_URL="postgresql://postgres.vencmprsngsjxfkdxzjv:3H3RxaVpgMf8X9Vp@aws-1-eu-west-1.pooler.supabase.com:5432/postgres"
+export RAILS_ENV=production
+
+# Run migrations
+bundle exec rails db:migrate
+
+# (Optional) Seed data
+bundle exec rails db:seed
+```
+
+#### Option 3: Using Vercel CLI
+```bash
+npm i -g vercel
+vercel link
+vercel env pull
+bundle exec rails db:migrate RAILS_ENV=production
+```
+
+### Verify Database
+
+Check Supabase Dashboard → Table Editor:
+- Should see tables: `locations`, `shops`, `services`, `reviews`, `users`
+- If no tables, run migrations above
+
+### Test After Migration
+
+- `/health` - Should return "OK"
+- `/` - Should load homepage
+
+---
+
 ## Support
 
 If issues persist, check:
 - Vercel build logs for specific errors
 - Ruby version in logs: should show "3.2.2"
 - psych version in logs: should be < 5.3
+- Vercel function logs for runtime errors
+- Database connectivity from Vercel
